@@ -1,0 +1,151 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "cmd+i",
+        "command": "composerMode.agent"
+    },
+    {
+        "key": "cmd+backspace",
+        "command": "editor.action.deleteLines",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+cmd+k",
+        "command": "-editor.action.deleteLines",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+o",
+        "command": "workbench.action.quickOpen"
+    },
+    {
+        "key": "cmd+p",
+        "command": "-workbench.action.quickOpen"
+    },
+    {
+        "key": "shift+cmd+s",
+        "command": "workbench.action.splitEditorToRightGroup"
+    },
+    {
+        "key": "ctrl+cmd+]",
+        "command": "workbench.action.moveEditorToNextGroup"
+    },
+    {
+        "key": "shift+cmd+up",
+        "command": "editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+cmd+down",
+        "command": "editor.action.moveLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+1",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "cmd+b",
+        "command": "-workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "cmd+b",
+        "command": "editor.action.revealDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus"
+    },
+    {
+        "key": "f12",
+        "command": "-editor.action.revealDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus"
+    },
+    {
+        "key": "cmd+k",
+        "command": "workbench.action.showNextWindowTab"
+    },
+    {
+        "key": "cmd+j",
+        "command": "workbench.action.showPreviousWindowTab"
+    },
+    {
+        "key": "shift+cmd+]",
+        "command": "-workbench.action.nextEditor"
+    },
+    {
+        "key": "shift+cmd+[",
+        "command": "-workbench.action.previousEditor"
+    },
+    {
+        "key": "ctrl+[",
+        "command": "workbench.action.previousEditorInGroup"
+    },
+    {
+        "key": "cmd+r alt+cmd+left",
+        "command": "-workbench.action.previousEditorInGroup"
+    },
+    {
+        "key": "ctrl+]",
+        "command": "workbench.action.nextEditorInGroup"
+    },
+    {
+        "key": "cmd+r alt+cmd+right",
+        "command": "-workbench.action.nextEditorInGroup"
+    },
+    {
+        "key": "ctrl+shift+]",
+        "command": "workbench.action.focusNextGroup"
+    },
+    {
+        "key": "ctrl+shift+[",
+        "command": "workbench.action.focusPreviousGroup"
+    },
+    {
+        "key": "cmd+r shift+cmd+right",
+        "command": "-workbench.action.moveEditorRightInGroup"
+    },
+    {
+        "key": "cmd+r shift+cmd+left",
+        "command": "-workbench.action.moveEditorLeftInGroup"
+    },
+    {
+        "key": "ctrl+cmd+[",
+        "command": "workbench.action.moveEditorToPreviousGroup"
+    },
+    {
+        "key": "ctrl+cmd+left",
+        "command": "-workbench.action.moveEditorToPreviousGroup"
+    },
+    {
+        "key": "ctrl+cmd+right",
+        "command": "-workbench.action.moveEditorToNextGroup"
+    },
+    {
+        "key": "ctrl+shift+cmd+z",
+        "command": "workbench.action.toggleZenMode",
+        "when": "!isAuxiliaryWindowFocusedContext && !isInBackgroundComposerWindow"
+    },
+    {
+        "key": "cmd+r z",
+        "command": "-workbench.action.toggleZenMode",
+        "when": "!isAuxiliaryWindowFocusedContext && !isInBackgroundComposerWindow"
+    },
+    {
+        "key": "ctrl+shift+]",
+        "command": "workbench.action.terminal.focusNext",
+        "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+    },
+    {
+        "key": "shift+cmd+]",
+        "command": "-workbench.action.terminal.focusNext",
+        "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+    },
+    {
+        "key": "ctrl+cmd+b",
+        "command": "gitlens.toggleFileBlame",
+        "when": "editorTextFocus && config.gitlens.keymap == 'alternate' && resource in 'gitlens:tabs:blameable'"
+    },
+    {
+        "key": "alt+b",
+        "command": "-gitlens.toggleFileBlame",
+        "when": "editorTextFocus && config.gitlens.keymap == 'alternate' && resource in 'gitlens:tabs:blameable'"
+    }
+]
